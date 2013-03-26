@@ -1,0 +1,310 @@
+/*
+Theme Name: Hundred Stories
+Description: The Hundred Stories is a responsive theme.
+Author: a youXlab team
+Author URI: http://youxlab.ou.edu/
+Theme URI: http://youxlab/hundred-stories-theme.php/
+Version: 1.0
+License: GNU General Public License
+License URI: 
+Tags: 
+
+Credits:
+*/
+
+/* =Notes
+--------------------------------------------------------------
+This stylesheet uses rem values with a pixel fallback. The rem
+values (and line heights) are calculated using two variables:
+
+$rembase:     16;
+$line-height: 24;
+
+---------- Examples
+
+* Use a pixel value with a rem fallback for font-size, padding, margins, etc.
+  padding: 4px 0;
+	padding: 0.25rem 0; (4 / $rembase)
+	
+	padding: 8px 0;
+	padding: 0.5rem 0; (8 / $rembase)
+	
+	padding: 12px 0;
+	padding: 0.75rem 0; (12 / $rembase)
+
+	padding: 16px 0;
+	padding: 1rem 0; (16 / $rembase)
+
+	padding: 20px 0;
+	padding: 1.25rem 0; (20 / $rembase)
+	
+	padding: 24px 0;
+	padding: 1.5rem 0; (24 / $rembase)
+
+* Set a font-size and then set a line-height based on the font-size
+	font-size: 16px
+	font-size: 1; (16 / $rembase)
+	line-height: 1.5; ($line-height / 16)
+
+---------- Vertical spacing
+
+Vertical spacing between most elements should use 24px or 48px
+to maintain vertical rhythm:
+
+.my-new-div {
+	margin: 24px 0;
+	margin: 1.5rem 0; ( 24 / $rembase )
+}
+
+---------- Further reading
+
+http://snook.ca/archives/html_and_css/font-size-with-rem
+http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
+
+//background-image:url('gridbg.gif');
+
+/* =Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+}
+body {
+	
+	line-height: 24px;
+}
+ol,
+ul {
+	list-style: none;
+}
+
+/* =Basic structure
+-------------------------------------------------------------- */
+
+/* Body, links, basics */
+html {
+	font-size: 100%;
+}
+body {
+	font-size: 16px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #282828;
+}
+
+a {
+	color: #590000;
+	text-decoration:none;
+}
+a:hover {
+	color: #590000;
+	text-decoration:underline;
+}
+
+/* Assistive text */
+.assistive-text,
+.site .screen-reader-text {
+	position:absolute;
+	left:-10000px;
+}
+
+
+
+/* Page structure */
+#masthead {
+	background-color:#282828;
+	color:#ededed;
+	overflow:hidden;
+	padding: 24px 0 0 0;
+	margin-bottom:24px;
+}
+
+/* Page structure */
+#colophon {
+	background-color:#282828;
+	color:#ededed;
+	overflow:hidden;
+	padding: 24px 0 24px 0;
+}
+
+#standard, #site-navigation, #site-info, #main {
+	margin: 0 24px;
+}
+
+#standard
+{
+	letter-spacing:12px;
+	text-transform:uppercase;
+}
+
+.menu-toggle {
+	text-transform:uppercase;
+	display:block;	
+}
+
+#site-navigation li
+{
+	border-top: 1px dotted #ededed;	
+}
+
+#site-navigation li a
+{
+	display:block;
+	padding:12px 0;
+}
+
+#site-info {
+	min-height:240px;
+}
+
+#site-title {
+	font-weight:normal;	
+}
+
+#masthead a, #colophon a
+{
+	color:#ededed;
+}
+
+.menu-toggle {
+	background-image:url("css/images/btn.png");
+	background-repeat:no-repeat;
+	padding:12px 0;
+	background-position:right;
+	text-indent:-10000px;
+}
+
+#gaylord-logo {
+	background-image:url("css/images/GaylordCollege_logo_type_hundred_stories.png");
+	background-repeat:no-repeat;
+	height:72px;
+	text-indent:-10000px;
+}
+
+
+
+#secondary {
+		clear:both;
+	}
+
+#main {
+	min-height: 480px;
+}
+
+.entry-content a {
+	opacity:0.4;	
+}
+
+.entry-content a:hover {
+	opacity:1;	
+}
+
+.nav-single {
+	clear:both;
+	margin-bottom:24px;
+}
+
+.nav-next {
+	float:right;	
+}
+
+#single {
+	width:100%;	
+}
+
+#single a{
+	opacity:1.0;	
+}
+
+#single .attachment-full {
+		width:100%;
+		height:auto;	
+		margin-bottom:24px;
+	}
+
+#single .entry-header {
+	position:relative;
+	margin-bottom:24px;
+}
+
+#single .entry-content {
+	margin-bottom:24px;
+}
+
+#respond, #comments, #commentlist {
+	clear:both;
+	margin-bottom:24px;
+	}
+
+@media only screen and (min-width: 960px) {
+	#masthead {
+		padding-top:72px;
+		background-image:url("css/images/gaylordHall_krug_vector.png");
+		background-repeat:no-repeat;
+		background-position:right bottom;
+	}
+	
+	#standard, #site-navigation, #site-info, #main {
+		width:960px;
+		margin: 0 auto;
+	}	
+	
+	#primary {
+		
+	}
+	
+	
+	.post {
+		width:20%;
+		position:relative;
+		overflow:hidden;
+	}
+
+
+.post img {
+		width:100%;
+		height:auto;	
+	}
+
+.entry-header {
+		position:absolute;
+	}
+
+.post {
+		float:left;	
+	}
+	
+	
+	.entry-content {
+		
+	}
+		
+	
+	#single {
+	width:66%;	
+}	
+	
+		
+	#colophon {
+			clear:both;
+	}
+	
+	
+}
+
+@media only screen 
+and (max-width : 320px) {
+	.post {
+		width:100%;
+		position:relative;
+		
+	}
+	
+	.post img {
+		width:100%;
+		height:auto;	
+	}
+
+}
