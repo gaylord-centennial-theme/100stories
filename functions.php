@@ -59,6 +59,8 @@ function hundredstories_setup() {
 
 	add_theme_support( 'post-thumbnails' );
 	
+	set_post_thumbnail_size( 150,150, true );
+	
 	// This theme supports a variety of post formats.
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
 
