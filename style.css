@@ -226,10 +226,10 @@ margin-bottom:24px;
 }
 
 #single .attachment-full {
-		width:100%;
-		height:auto;	
-		margin-bottom:24px;
-	}
+	width:100%;
+	height:auto;	
+	margin-bottom:24px;
+}
 
 #single .entry-header {
 	position:relative;
@@ -249,10 +249,16 @@ margin-bottom:24px;
 width:100%;	
 }
 
-#primary {
-	width:100%;
-	
-	}	
+
+
+.widget-title, #single .entry-header {
+	letter-spacing:12px;
+	text-transform:uppercase;	
+}
+
+#secondary aside {
+	margin-bottom: 24px;
+}
 
 
 @media only screen and (min-width: 960px) {
@@ -272,6 +278,31 @@ width:100%;
 		
 	}
 	
+	#site-navigation li
+	{
+		border-top: 0;
+		display:inline;	
+		float:left;
+		padding-right:24px;
+		padding-bottom: 24px;
+	}
+	
+	#site-navigation li a
+	{
+		background-color:#590000;
+		padding:12px 12px;
+		width:195px;
+		height: 195px;
+	}
+	
+	#site-navigation li a:hover
+	{
+		background-color:#ededed;
+		color:#590000;
+		padding:12px 12px;
+		width:195px;
+		hight:195px;
+	}
 	
 	.post {
 		width:20%;
@@ -280,18 +311,18 @@ width:100%;
 	}
 
 
-.post img {
-		width:100%;
-		height:auto;	
-	}
-
-.entry-header {
-		position:absolute;
-	}
-
-.post {
-		float:left;	
-	}
+	.post img {
+			width:100%;
+			height:auto;	
+		}
+	
+	.entry-header {
+			position:absolute;
+		}
+	
+	.post {
+			float:left;	
+		}
 	
 	
 	.entry-content {
@@ -300,8 +331,8 @@ width:100%;
 		
 	
 	#primary {
-	width:66%;
-	float:left;
+		width:66%;
+		float:left;
 	}	
 	#secondary {
 		width:30%;
@@ -315,6 +346,8 @@ width:100%;
 	#comment {
 	width:60%;	
 	}
+	
+	
 }
 
 @media only screen 
