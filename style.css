@@ -23,7 +23,7 @@ $line-height: 24;
 ---------- Examples
 
 * Use a pixel value with a rem fallback for font-size, padding, margins, etc.
-  padding: 4px 0;
+	padding: 4px 0;
 	padding: 0.25rem 0; (4 / $rembase)
 	
 	padding: 8px 0;
@@ -121,8 +121,13 @@ a:hover {
 	margin-bottom:24px;
 }
 
+.post {
+	float:left;	
+}
+
 /* Page structure */
 #colophon {
+	clear:both;
 	background-color:#282828;
 	color:#ededed;
 	overflow:hidden;
@@ -183,7 +188,9 @@ a:hover {
 	text-indent:-10000px;
 }
 
-
+.entry-content p {
+margin-bottom:24px;
+}
 
 #secondary {
 		clear:both;
@@ -237,6 +244,11 @@ a:hover {
 	clear:both;
 	margin-bottom:24px;
 	}
+
+#comment {
+width:100%;	
+}
+
 
 @media only screen and (min-width: 960px) {
 	#masthead {
