@@ -303,7 +303,9 @@ width:100%;
 			clear:both;
 	}
 	
-	
+	#comment {
+	width:60%;	
+	}
 }
 
 @media only screen 
