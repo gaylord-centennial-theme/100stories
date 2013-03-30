@@ -249,6 +249,11 @@ margin-bottom:24px;
 width:100%;	
 }
 
+#primary {
+	width:100%;
+	
+	}	
+
 
 @media only screen and (min-width: 960px) {
 	#masthead {
@@ -294,10 +299,14 @@ width:100%;
 	}
 		
 	
-	#single {
-	width:66%;	
-}	
-	
+	#primary {
+	width:66%;
+	float:left;
+	}	
+	#secondary {
+		width:30%;
+		float:right;
+	}
 		
 	#colophon {
 			clear:both;
