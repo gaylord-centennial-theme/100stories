@@ -32,7 +32,7 @@ get_header(); ?>
 			                    </article><!-- #post -->
 				<?php endwhile; ?>
 				<?php hundredstories_content_nav(); ?>
-            <?php else : ?>
+            		<?php else : ?>
 				<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; ?>
 			</div><!-- #content -->
