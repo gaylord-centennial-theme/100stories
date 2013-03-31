@@ -149,6 +149,10 @@ a:hover {
 	display:block;	
 }
 
+#site-navigation {
+	position:relative;
+}
+
 #site-navigation li
 {
 	border-top: 1px dotted #ededed;	
@@ -260,6 +264,9 @@ width:100%;
 	margin-bottom: 24px;
 }
 
+#carousel-container {
+	display:none;
+}
 
 @media only screen and (min-width: 960px) {
 	#masthead {
@@ -278,27 +285,59 @@ width:100%;
 		
 	}
 	
+	.menu-centennial-menu-container {
+	margin-top:24px;
+	padding-left: 12px;
+	padding-right: 36px;
+	}
+	
+	#carousel-container {
+		width:100%;
+		display:block;
+		position:absolute;
+		z-index: 0;
+	}
+	
+	#carousel-container img {
+		width:100%;
+		height:auto;
+	}
+	
+	#menu-centennial-menu {
+		
+		position:relative;
+		z-index:2100;	
+	}
+	
+	
 	#site-navigation li
 	{
 		border-top: 0;
 		display:inline;	
 		float:left;
-		padding-right:24px;
-		padding-bottom: 24px;
+		padding-right:12px;
+		padding-top: 12px;
+	}
+	
+	.menu-toggle {
+		display:none;	
 	}
 	
 	#site-navigation li a
 	{
-		background-color:#590000;
+		background-color: rgb(237, 237, 237);		
+		background-color: rgba(237, 237, 237, 0.75);
+		color:#590000;
 		padding:12px 12px;
 		width:195px;
 		height: 195px;
+		text-decoration:none;
 	}
 	
 	#site-navigation li a:hover
 	{
-		background-color:#ededed;
-		color:#590000;
+		background-color:#590000;
+		color:#ededed;
 		padding:12px 12px;
 		width:195px;
 		hight:195px;
