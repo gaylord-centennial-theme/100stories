@@ -32,9 +32,11 @@
 <?php wp_head(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
-  	$(document).ready(function(){
+		$(document).ready(function(){
 			var viewportWidth=jQuery(window).width();
-			$(".menu-toggle").css("cursor","pointer");			$("#menu-centennial-menu").hide();
+			if (viewportWidth < 960){$("#menu-centennial-menu").hide();}
+			$(".menu-toggle").css("cursor","pointer");			
+	//		$("#menu-centennial-menu").show();
 			$(".menu-toggle").click(function(){
 					$("#menu-centennial-menu").slideToggle();
 			});
@@ -50,8 +52,13 @@
         </hgroup><!-- #standard -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <h3 class="menu-toggle" title="Menu">><?php _e( 'Menu', 'hundredstories' ); ?></h3>
+            
             <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'hundredstories' ); ?>"><?php _e( 'Skip to content', 'hundredstories' ); ?></a>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+            <div id="carousel-container">
+                <img src="<?php echo get_template_directory_uri(); ?>/test.jpg" alt="draft"/>
+            </div>
         </nav><!-- #site-navigation -->
+        
     </header><!-- #masthead -->
 	<div id="main" class="wrapper">
