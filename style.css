@@ -403,3 +403,9 @@ and (max-width : 320px) {
 	}
 
 }
+#category-title {
+	letter-spacing: 12px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	text-align: right;
+}
