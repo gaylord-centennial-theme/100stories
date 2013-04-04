@@ -8,6 +8,17 @@
  */
 
 get_header(); ?>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#menu-centennial-menu").hide();
+			$(".menu-toggle").css("cursor","pointer");			
+	//		$("#menu-centennial-menu").show();
+			$(".menu-toggle").click(function(){
+					$("#menu-centennial-menu").slideToggle();
+			});
+					
+		});
+</script>
   	<div id="primary" class="site-content">
 			<div id="content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
