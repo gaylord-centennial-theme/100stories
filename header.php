@@ -31,17 +31,7 @@
 <![endif]-->
 <?php wp_head(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript">
-		$(document).ready(function(){
-			var viewportWidth=jQuery(window).width();
-			if (viewportWidth < 960){$("#menu-centennial-menu").hide();}
-			$(".menu-toggle").css("cursor","pointer");			
-	//		$("#menu-centennial-menu").show();
-			$(".menu-toggle").click(function(){
-					$("#menu-centennial-menu").slideToggle();
-			});
-		});
-</script>
+
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
