@@ -26,6 +26,9 @@ get_header(); ?>
 			});
 		});
 </script>
+<h3 id="category-title">
+Gaylord College of Journalism and Mass Communication
+</h3>
 	<div id="single-primary" class="site-content">
 		<div id="content" role="main">
 			<?php if ( have_posts() ) : ?>
