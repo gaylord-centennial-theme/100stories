@@ -15,6 +15,17 @@
  */
 
 get_header(); ?>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var viewportWidth=jQuery(window).width();
+			if (viewportWidth < 960){$("#menu-centennial-menu").hide();}
+			$(".menu-toggle").css("cursor","pointer");			
+	//		$("#menu-centennial-menu").show();
+			$(".menu-toggle").click(function(){
+					$("#menu-centennial-menu").slideToggle();
+			});
+		});
+</script>
 	<div id="single-primary" class="site-content">
 		<div id="content" role="main">
 			<?php if ( have_posts() ) : ?>
