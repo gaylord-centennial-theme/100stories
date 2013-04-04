@@ -22,6 +22,9 @@ get_header(); ?>
 			});
 		});
 </script>
+	<h3 id="category-title">
+		<?php single_cat_title(); ?> 
+	</h3>
 	<div id="single-primary" class="site-content">
 		<div id="content" role="main">
 			<?php if ( have_posts() ) : ?>
