@@ -27,7 +27,7 @@ get_header(); ?>
 		});
 </script>
 <h3 id="category-title">
-Gaylord College of Journalism and Mass Communication
+University of Oklahoma : Gaylord College
 </h3>
 	<div id="single-primary" class="site-content">
 		<div id="content" role="main">
