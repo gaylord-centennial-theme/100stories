@@ -320,8 +320,8 @@ width:100%;
 	}
 	
 	.menu-toggle {
-				
-		}
+			
+	}
 	
 	#site-navigation li a
 	{
@@ -357,6 +357,8 @@ width:100%;
 	
 	.entry-header {
 			position:absolute;
+			padding-top: 12px;
+			padding-left: 12px; 
 		}
 	
 	.post {
