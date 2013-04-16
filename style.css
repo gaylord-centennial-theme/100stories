@@ -411,3 +411,8 @@ and (max-width : 320px) {
 	margin-bottom: 24px;
 	text-align: center;
 }
+
+.widget_text p {
+	margin-bottom: 24px;
+}
+	
