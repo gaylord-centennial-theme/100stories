@@ -30,6 +30,11 @@
 	     	<div id="site-info">
 				<ul>
                 <li id="gaylord-logo"><a href="http://www.ou.edu/gaylord/">The University of Oklahoma | Gaylord College of Journalism and Mass Communication</a></li>
+               <li>
+               	<br>395 W. Lindsey, Room 3000<br>
+				Norman, OK 73019<br>
+				405-325-2721 | Advising 405-325-5684<br>
+               </li>
                 <li>&copy; Copyright <?php
                 ini_set('date.timezone', 'America/Chicago');
                 $startYear = 2012;
