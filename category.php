@@ -38,6 +38,23 @@ get_header(); ?>
                         </header><!-- .entry-header -->
                         <div class="entry-content">
                                 <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( '%s', 'hundredstories' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
+                        
+                                                        
+                                
+			<script type="text/javascript">
+			   $(".entry-title").mouseenter(function(){
+				  $(this).hide();
+				   // $(this).position({
+					//my: $(this),
+    				//at: $(this),
+					//of: $(this)
+				  //});
+			   });
+				  $(".entry-title").mouseout(function(){
+				 	 $(".entry-title").show();
+				});
+			</script>
+                        
                         </div><!-- .entry-content -->
                     </article><!-- #post -->
 				<?php endwhile; ?>
