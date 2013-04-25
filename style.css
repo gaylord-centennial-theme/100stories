@@ -206,10 +206,12 @@ margin-bottom:24px;
 
 .entry-content a {
 	opacity:0.17;	
+	
 }
 
 .entry-content a:hover {
 	opacity:1;	
+	
 }
 
 .nav-single {
@@ -259,6 +261,9 @@ width:100%;
 	letter-spacing:12px;
 	text-transform:uppercase;	
 }
+#primary{
+	border-right: 1px;
+}
 
 #secondary aside {
 	margin-bottom: 24px;
@@ -267,7 +272,21 @@ width:100%;
 #carousel-container {
 	display:none;
 }
+#category-title {
+	letter-spacing: 12px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.widget_text p {
+	margin-bottom: 24px;
 
+}
+	.entry-header {
+			position:absolute;
+			padding-top: 12px;
+			padding-left: 12px; 
+		}
 @media only screen and (min-width: 960px) {
 	#masthead {
 		padding-top:72px;
@@ -355,25 +374,18 @@ width:100%;
 			height:auto;	
 		}
 	
-	.entry-header {
-			position:absolute;
-			padding-top: 12px;
-			padding-left: 12px; 
-		}
 	
 	.post {
 			float:left;	
-		}
-	
-	
-	.entry-content {
-		
 	}
-		
-	
 	#primary {
 		width:66%;
 		float:left;
+		border-right: 1px solid;
+		padding: 13px;
+		border-color: #5e5e5e;
+		border-length: auto;
+		 
 	}	
 	#secondary {
 		width:30%;
@@ -383,7 +395,9 @@ width:100%;
 	#colophon {
 			clear:both;
 	}
-	
+	.entry-title{
+		word-wrap:break-word;
+	}
 	#comment {
 	width:60%;	
 	}
@@ -393,26 +407,15 @@ width:100%;
 
 @media only screen 
 and (max-width : 320px) {
-	.post {
+.post {
 		width:100%;
 		position:relative;
-		
 	}
 	
 	.post img {
 		width:100%;
 		height:auto;	
 	}
-
-}
-#category-title {
-	letter-spacing: 12px;
-	text-transform: uppercase;
-	margin-bottom: 24px;
-	text-align: center;
 }
 
-.widget_text p {
-	margin-bottom: 24px;
-}
 	
